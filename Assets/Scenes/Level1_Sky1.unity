@@ -122,6 +122,73 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &116312073
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2988249946354764896, guid: 6b25a2da4dd849043b8401a4ceca7003, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648001611236116135, guid: 6b25a2da4dd849043b8401a4ceca7003, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.989656
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648001611236116135, guid: 6b25a2da4dd849043b8401a4ceca7003, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 26.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648001611236116135, guid: 6b25a2da4dd849043b8401a4ceca7003, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648001611236116135, guid: 6b25a2da4dd849043b8401a4ceca7003, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648001611236116135, guid: 6b25a2da4dd849043b8401a4ceca7003, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648001611236116135, guid: 6b25a2da4dd849043b8401a4ceca7003, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648001611236116135, guid: 6b25a2da4dd849043b8401a4ceca7003, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648001611236116135, guid: 6b25a2da4dd849043b8401a4ceca7003, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648001611236116135, guid: 6b25a2da4dd849043b8401a4ceca7003, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648001611236116135, guid: 6b25a2da4dd849043b8401a4ceca7003, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6b25a2da4dd849043b8401a4ceca7003, type: 3}
+--- !u!4 &116312074 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1690617730682102641, guid: 6b25a2da4dd849043b8401a4ceca7003, type: 3}
+  m_PrefabInstance: {fileID: 116312073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &116312075 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7193805536170343461, guid: 6b25a2da4dd849043b8401a4ceca7003, type: 3}
+  m_PrefabInstance: {fileID: 116312073}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &185253735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -195,7 +262,7 @@ GameObject:
   - component: {fileID: 213491648}
   - component: {fileID: 213491647}
   - component: {fileID: 213491646}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,6 +353,52 @@ Transform:
   m_LocalScale: {x: 30.838598, y: 1.7186964, z: 18.153835}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &753018752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 753018754}
+  - component: {fileID: 753018753}
+  m_Layer: 0
+  m_Name: CameraHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &753018753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753018752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01972debbd2afbe41bb48346f5838f5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraPosition: {fileID: 116312075}
+--- !u!4 &753018754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753018752}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.08599, y: 27.62535, z: 3.0161774}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1769351393}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1025249421
@@ -394,7 +507,7 @@ GameObject:
   - component: {fileID: 1136021434}
   - component: {fileID: 1136021433}
   - component: {fileID: 1136021432}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CloudCheckpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -499,7 +612,7 @@ GameObject:
   - component: {fileID: 1632792089}
   - component: {fileID: 1632792088}
   - component: {fileID: 1632792087}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloud (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -603,6 +716,7 @@ GameObject:
   - component: {fileID: 1769351393}
   - component: {fileID: 1769351392}
   - component: {fileID: 1769351391}
+  - component: {fileID: 1769351394}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -677,13 +791,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769351390}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 20.41, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.08599, y: -7.215351, z: -3.0161774}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 753018754}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1769351394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769351390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e20089848e51074ba7373dda16f5bb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensX: 800
+  sensY: 800
+  orientation: {fileID: 116312074}
 --- !u!1 &2044044763
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,7 +825,7 @@ GameObject:
   - component: {fileID: 2044044766}
   - component: {fileID: 2044044765}
   - component: {fileID: 2044044764}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloud (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -801,7 +930,7 @@ GameObject:
   - component: {fileID: 2099771295}
   - component: {fileID: 2099771294}
   - component: {fileID: 2099771293}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloud (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -898,7 +1027,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1769351393}
+  - {fileID: 753018754}
   - {fileID: 1025249423}
   - {fileID: 185253735}
   - {fileID: 213491649}
@@ -906,3 +1035,4 @@ SceneRoots:
   - {fileID: 2044044767}
   - {fileID: 1632792090}
   - {fileID: 1136021435}
+  - {fileID: 116312073}
