@@ -2817,6 +2817,10 @@ PrefabInstance:
       propertyPath: cameraPosition
       value: 
       objectReference: {fileID: 1439926877}
+    - target: {fileID: 5915486549753521686, guid: 37b6ff3eaf3765e409ed8f77d17f7766, type: 3}
+      propertyPath: m_Volume
+      value: 0.619
+      objectReference: {fileID: 0}
     - target: {fileID: 5915890946740912353, guid: 37b6ff3eaf3765e409ed8f77d17f7766, type: 3}
       propertyPath: m_Name
       value: CameraHolder
